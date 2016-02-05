@@ -7,6 +7,14 @@
   "scripts": {
     "test": "apm test"
   },
+  "package-deps": ["linter"],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/steelbrain/flow-ide.git"
@@ -22,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/steelbrain/flow-ide/issues"
   },
-  "homepage": "https://github.com/steelbrain/flow-ide#readme"
+  "homepage": "https://github.com/steelbrain/flow-ide#readme",
+  "dependencies": {
+    "atom-package-deps": "^3.0.7"
+  }
 }
