@@ -1,0 +1,26 @@
+{
+  "name": "flow-ide",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Flowtype support in Atom without any bloatware",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "apm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steelbrain/flow-ide.git"
+  },
+  "keywords": [
+    "flow",
+    "flowtype",
+    "ide",
+    "javascript"
+  ],
+  "author": "steelbrain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steelbrain/flow-ide/issues"
+  },
+  "homepage": "https://github.com/steelbrain/flow-ide#readme"
+}
