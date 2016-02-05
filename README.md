@@ -24,6 +24,11 @@ Differences to [AtomLinter/linter-flow][linter-flow]
 Differences to [nmn/autocomplete-flow][autocomplete-flow]
  - Never worked for me
 
+#### Screenshots
+
+![Autocomplete](https://cloud.githubusercontent.com/assets/4278113/12857027/bb8e2c80-cc69-11e5-918d-4451d0679e66.png)
+
+
 #### License
 
 This project is licensed under the terms of MIT License. Check the LICENSE file for more info.
