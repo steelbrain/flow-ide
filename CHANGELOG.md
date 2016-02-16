@@ -1,3 +1,7 @@
+#### 1.0.4
+
+- Bump `atom-package-deps` version
+
 #### 1.0.3
 
 - Bump `atom-linter` dependency to include fix for projects that don't have a `.flowcofig`
