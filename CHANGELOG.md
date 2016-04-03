@@ -1,3 +1,8 @@
+#### 1.0.5
+
+- Fix a bug in retrying for server
+- Fix a bug where deep nested objects would mess up autocomplete
+
 #### 1.0.4
 
 - Bump `atom-package-deps` version
