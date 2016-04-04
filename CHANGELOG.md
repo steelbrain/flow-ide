@@ -1,3 +1,8 @@
+#### Upcoming
+
+- Show a correct type for Objects in autocomplete
+- Only run autocomplete at appropriate times ( Fixes #3 )
+
 #### 1.0.5
 
 - Fix a bug in retrying for server
