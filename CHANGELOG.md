@@ -1,3 +1,8 @@
+#### 1.1.0
+
+- Add support for locally installed flow bins
+- Bump `atom-linter` to v5
+
 #### 1.0.6
 
 - Show a correct type for Objects in autocomplete
