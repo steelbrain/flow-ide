@@ -1,3 +1,7 @@
+#### 1.1.1
+
+- Fix a reference to undefined variable in case of error ( Fixes #12 )
+
 #### 1.1.0
 
 - Add support for locally installed flow bins
