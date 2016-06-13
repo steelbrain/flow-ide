@@ -40,7 +40,7 @@
   "homepage": "https://github.com/steelbrain/flow-ide#readme",
   "dependencies": {
     "atom-autocomplete": "^1.0.0",
-    "atom-linter": "^5.0.1",
+    "atom-linter": "^5.0.2",
     "atom-package-deps": "^4.0.0",
     "sb-string_score": "^0.1.20"
   }
