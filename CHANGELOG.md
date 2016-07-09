@@ -1,3 +1,7 @@
+#### 1.1.3
+
+- Show entire linter error message
+
 #### 1.1.1-1.1.2
 
 - Fix a bug introduced in 1.1.0 where autocomplete wouldn't work
