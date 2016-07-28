@@ -1,3 +1,7 @@
+#### 1.1.4
+
+- Handle flow crashes/respawns gracefully
+
 #### 1.1.3
 
 - Show entire linter error message
