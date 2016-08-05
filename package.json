@@ -1,7 +1,7 @@
 {
   "name": "flow-ide",
   "private": true,
-  "version": "1.1.2",
+  "version": "1.1.5",
   "description": "Flowtype support in Atom without any bloatware",
   "main": "lib/index.js",
   "scripts": {
@@ -40,7 +40,7 @@
   "homepage": "https://github.com/steelbrain/flow-ide#readme",
   "dependencies": {
     "atom-autocomplete": "^1.0.0",
-    "atom-linter": "^5.0.1",
+    "atom-linter": "^7.0.0",
     "atom-package-deps": "^4.0.0",
     "sb-string_score": "^0.1.20"
   }

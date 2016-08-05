@@ -1,3 +1,15 @@
+#### 1.1.5
+
+- Just another patch to catch more flow errors gracefully
+
+#### 1.1.4
+
+- Handle flow crashes/respawns gracefully
+
+#### 1.1.3
+
+- Show entire linter error message
+
 #### 1.1.1-1.1.2
 
 - Fix a bug introduced in 1.1.0 where autocomplete wouldn't work
