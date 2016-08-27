@@ -1,3 +1,7 @@
+#### 1.1.6
+
+- Workaround a Atom's builtin babel bug
+
 #### 1.1.5
 
 - Just another patch to catch more flow errors gracefully
