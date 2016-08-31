@@ -1,3 +1,7 @@
+#### 1.1.7
+
+- Fix a bug in last release
+
 #### 1.1.6
 
 - Workaround a Atom's builtin babel bug
