@@ -13,7 +13,7 @@
   "providedServices": {
     "linter": {
       "versions": {
-        "2.0.0": "provideLinter"
+        "1.0.0": "provideLinter"
       }
     },
     "autocomplete.provider": {
@@ -43,5 +43,8 @@
     "atom-linter": "^7.0.0",
     "atom-package-deps": "^4.0.0",
     "sb-string_score": "^0.1.20"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.31.1"
   }
 }
