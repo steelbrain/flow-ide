@@ -1,3 +1,7 @@
+#### 1.1.8
+
+- APM was having hiccups back then so didn't publish properly
+
 #### 1.1.7
 
 - Fix a bug in last release
