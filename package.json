@@ -5,7 +5,8 @@
   "description": "Flowtype support in Atom without any bloatware",
   "main": "lib/index.js",
   "scripts": {
-    "test": "apm test"
+    "test": "apm test",
+    "lint": "eslint ."
   },
   "package-deps": [
     "linter"
@@ -48,7 +49,8 @@
     "sb-string_score": "^0.1.20"
   },
   "devDependencies": {
-    "flow-bin": "^0.32.0"
+    "flow-bin": "^0.32.0",
+    "eslint-config-steelbrain": "^2.0.0"
   },
   "configSchema": {
     "onlyIfAppropriate": {
