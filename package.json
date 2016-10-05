@@ -10,6 +10,9 @@
   "package-deps": [
     "linter"
   ],
+  "engines": {
+    "atom": ">=1.4.0 <2.0.0"
+  },
   "providedServices": {
     "linter": {
       "versions": {
@@ -46,5 +49,17 @@
   },
   "devDependencies": {
     "flow-bin": "^0.32.0"
+  },
+  "configSchema": {
+    "onlyIfAppropriate": {
+      "title": "Only activate when .flowconfig exists",
+      "type": "boolean",
+      "default": true
+    },
+    "executablePath": {
+      "description": "Path to `flow` executable",
+      "type": "string",
+      "default": ""
+    }
   }
 }
