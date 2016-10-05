@@ -1,6 +1,7 @@
 #### 1.1.9
 
 - Fix autocompletion for properties (#33)
+- Remove types from function params (#8)
 
 #### 1.1.8
 
