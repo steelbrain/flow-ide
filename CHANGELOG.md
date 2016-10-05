@@ -1,3 +1,7 @@
+#### 1.1.9
+
+- Fix autocompletion for properties (#33)
+
 #### 1.1.8
 
 - APM was having hiccups back then so didn't publish properly
