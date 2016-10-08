@@ -9,7 +9,7 @@
     "lint": "eslint ."
   },
   "package-deps": [
-    "linter"
+    "linter", "declarations"
   ],
   "engines": {
     "atom": ">=1.4.0 <2.0.0"
@@ -23,6 +23,11 @@
     "autocomplete.provider": {
       "versions": {
         "2.0.0": "provideAutocomplete"
+      }
+    },
+    "declarations": {
+      "versions": {
+        "1.0.0": "provideDeclarations"
       }
     }
   },
@@ -46,6 +51,7 @@
     "atom-autocomplete": "^1.0.0",
     "atom-linter": "^8.0.0",
     "atom-package-deps": "^4.3.1",
+    "declarations-javascript": "^3.0.0",
     "sb-string_score": "^0.1.20"
   },
   "devDependencies": {
