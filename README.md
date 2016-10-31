@@ -3,6 +3,11 @@ Flow-IDE
 
 Flow IDE is a lightweight package that provides IDE features for [FlowType][FlowType] for [Atom Editor][Atom]. It's pretty lightweight and robust.
 
+#### Installation
+```
+apm install flow-ide
+```
+
 #### Features
 
  - Linting
