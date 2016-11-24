@@ -26,6 +26,13 @@
       }
     }
   },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/steelbrain/flow-ide.git"
