@@ -1,3 +1,6 @@
+#### 1.1.10
+- Provide a default .flowconfig file if onlyIfAppropriate is enabled and a .flowconfig file is not found already
+
 #### 1.1.9
 
 - Fix autocompletion for properties (#33)
