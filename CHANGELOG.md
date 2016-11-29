@@ -1,3 +1,7 @@
+#### 1.2
+
+- Add Flow coverage view
+
 #### 1.1.10
 - Provide a default .flowconfig file if onlyIfAppropriate is enabled and a .flowconfig file is not found already
 
