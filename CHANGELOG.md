@@ -1,3 +1,7 @@
+#### 1.2.1
+
+- Fix flow type checking (#49)
+
 #### 1.2
 
 - Add Flow coverage view
