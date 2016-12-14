@@ -1,3 +1,7 @@
+#### 1.2.4
+
+- Had to bump version because of some issues in deployment (network)
+
 #### 1.2.2
 
 - Handle coverage count zero (#52)
