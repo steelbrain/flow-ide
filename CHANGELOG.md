@@ -1,3 +1,7 @@
+#### 1.2.2
+
+- Handle coverage count zero (#52)
+
 #### 1.2.1
 
 - Fix flow type checking (#49)
