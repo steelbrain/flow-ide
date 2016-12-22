@@ -29,7 +29,7 @@ Differences to [AtomLinter/linter-flow][linter-flow]
 Differences to [nmn/autocomplete-flow][autocomplete-flow]
  - Never worked for me
 
- Differences to [LukeHoban/ide-flow][ide-flow]
+Differences to [LukeHoban/ide-flow][ide-flow]
  - Outdated and buggy
  - No longer maintained
 
