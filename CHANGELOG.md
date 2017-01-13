@@ -1,6 +1,7 @@
 #### 1.3.0
 
 - Terminate flow servers on deactivate
+- Fix path.dirname deprecation by ignoring autocomplete requests on files not yet saved
 
 #### 1.2.4
 
