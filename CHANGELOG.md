@@ -1,3 +1,7 @@
+#### 1.3.0
+
+- Terminate flow servers on deactivate
+
 #### 1.2.4
 
 - Had to bump version because of some issues in deployment (network)
