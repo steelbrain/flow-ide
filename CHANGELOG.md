@@ -1,3 +1,7 @@
+#### 1.4.0
+
+- Upgrade for linter v2 support
+
 #### 1.3.0
 
 - Terminate flow servers on deactivate
