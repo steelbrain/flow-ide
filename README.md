@@ -1,6 +1,8 @@
 Flow-IDE
 =======
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/steelbrain/flow-ide.svg)](https://greenkeeper.io/)
+
 Flow IDE is a lightweight package that provides IDE features for [FlowType][FlowType] for [Atom Editor][Atom]. It's pretty lightweight and robust.
 
 #### Installation
