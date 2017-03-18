@@ -52,7 +52,7 @@
   "dependencies": {
     "atom-autocomplete": "^1.0.0",
     "atom-linter": "^9.0.1",
-    "atom-package-deps": "^4.4.1",
+    "atom-package-deps": "^4.5.0",
     "sb-string_score": "^0.1.20"
   },
   "devDependencies": {
