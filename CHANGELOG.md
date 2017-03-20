@@ -1,3 +1,7 @@
+#### 1.4.1
+
+- Increase exec timeout to 60 seconds
+
 #### 1.4.0
 
 - Upgrade for linter v2 support
