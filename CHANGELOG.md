@@ -1,3 +1,7 @@
+#### 1.4.2
+
+- Limit concurrent spawned processes
+
 #### 1.4.1
 
 - Increase exec timeout to 60 seconds
