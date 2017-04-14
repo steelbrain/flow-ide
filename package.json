@@ -51,13 +51,13 @@
   "homepage": "https://github.com/steelbrain/flow-ide#readme",
   "dependencies": {
     "atom-autocomplete": "^1.0.0",
-    "atom-linter": "^9.0.1",
+    "atom-linter": "^10.0.0",
     "atom-package-deps": "^4.4.1",
     "sb-string_score": "^0.1.20"
   },
   "devDependencies": {
-    "flow-bin": "^0.42.0",
-    "eslint-config-steelbrain": "^2.0.0"
+    "flow-bin": "^0.44.0",
+    "eslint-config-steelbrain": "^3.0.1"
   },
   "configSchema": {
     "onlyIfAppropriate": {
