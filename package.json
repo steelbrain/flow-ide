@@ -65,6 +65,11 @@
       "type": "boolean",
       "default": true
     },
+    "showUncovered": {
+      "title": "Show uncovered code in the editor",
+      "type": "boolean",
+      "default": false
+    },
     "executablePath": {
       "description": "Path to `flow` executable",
       "type": "string",
