@@ -1,6 +1,7 @@
 #### 1.5.0
 
 - Add option to show uncovered code
+- Fix process exited with non-zero status code for autocomplete
 
 #### 1.4.2
 
