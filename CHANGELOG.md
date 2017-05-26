@@ -1,3 +1,7 @@
+#### 1.5.0
+
+- Add option to show uncovered code
+
 #### 1.4.2
 
 - Limit concurrent spawned processes
