@@ -6,7 +6,7 @@
   "rules": {
     "import/prefer-default-export": "off",
     "no-duplicate-imports": "off",
-    "flowtype/define-flow-type": 1,
-    "flowtype/use-flow-type": 1
+    "flowtype/define-flow-type": "error",
+    "flowtype/use-flow-type": "error"
   }
 }
