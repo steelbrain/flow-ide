@@ -9,7 +9,8 @@
     "lint": "eslint ."
   },
   "package-deps": [
-    "linter"
+    "linter",
+    "hyperclick"
   ],
   "engines": {
     "atom": ">=1.4.0 <2.0.0"
