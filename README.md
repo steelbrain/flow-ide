@@ -12,10 +12,10 @@ apm install flow-ide
 
  - Linting
  - Autocomplete
+ - Jump to declaration (uses [facebooknuclide/hyperclick][hyperclick])
 
 #### Roadmap
 
- - Jump to declaration
  - Show types on mouseover
 
 #### Differences to other packages
