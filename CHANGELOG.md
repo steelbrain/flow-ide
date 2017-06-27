@@ -1,3 +1,9 @@
+#### 1.5.0
+
+- Add option to show uncovered code
+- Fix process exited with non-zero status code for autocomplete
+- Fix invalid behavior of `onlyIfAppropriate` config
+
 #### 1.4.2
 
 - Limit concurrent spawned processes

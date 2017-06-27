@@ -1,7 +1,7 @@
 {
   "name": "flow-ide",
   "private": true,
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "Flowtype support in Atom without any bloatware",
   "main": "lib/index.js",
   "scripts": {
@@ -70,6 +70,11 @@
       "title": "Only activate when .flowconfig exists",
       "type": "boolean",
       "default": true
+    },
+    "showUncovered": {
+      "title": "Show uncovered code in the editor",
+      "type": "boolean",
+      "default": false
     },
     "executablePath": {
       "description": "Path to `flow` executable",
