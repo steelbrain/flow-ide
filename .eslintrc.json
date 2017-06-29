@@ -1,7 +1,12 @@
 {
   "extends": "steelbrain",
+  "plugins": [
+    "flowtype"
+  ],
   "rules": {
     "import/prefer-default-export": "off",
-    "no-duplicate-imports": "off"
+    "no-duplicate-imports": "off",
+    "flowtype/define-flow-type": "error",
+    "flowtype/use-flow-type": "error"
   }
 }
