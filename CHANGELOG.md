@@ -1,3 +1,8 @@
+#### 1.6.0
+
+- Add "jump to definition" via `hyperclick`
+- Show the complete flow error message as error description
+
 #### 1.5.0
 
 - Add option to show uncovered code
