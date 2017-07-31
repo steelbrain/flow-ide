@@ -1,3 +1,7 @@
+#### 1.7.0
+
+- Change search order of `flow` executable (_Executable Path_ setting > `node_modules/.bin/flow` > global `flow`)
+
 #### 1.6.0
 
 - Add "jump to definition" via `hyperclick`
