@@ -83,7 +83,7 @@
       "default": ""
     },
     "hyperclickPriority": {
-      "description": "Priority to use for hyperclick provider",
+      "description": "Priority to use for hyperclick provider (requires restart)",
       "type": "integer",
       "default": "0"
     }
