@@ -1,3 +1,7 @@
+#### Upcoming
+
+- Show a restart notification after `hyperclickPriority` is updated
+
 #### 1.7.0
 
 - Change search order of `flow` executable (_Executable Path_ setting > `node_modules/.bin/flow` > global `flow`)
