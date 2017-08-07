@@ -1,5 +1,6 @@
 #### Upcoming
 
+- Add linting in flow support
 - Show a restart notification after `hyperclickPriority` is updated
 
 #### 1.7.0
