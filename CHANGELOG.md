@@ -1,3 +1,7 @@
+#### 1.8.1
+
+- Hide coverage view instead of emptying to fix extra padding
+
 #### 1.8.0
 
 - Add linting in flow support
