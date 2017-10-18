@@ -12,7 +12,8 @@ apm install flow-ide
 
  - Linting
  - Autocomplete
- - Jump to declaration (using [facebooknuclide/hyperclick][hyperclick])
+ - Jump to declaration (using [facebook-atom/hyperclick][hyperclick] or [facebook-atom/atom-ide-ui][atom-ide-ui])
+ - Datatip on hover (using [facebook-atom/atom-ide-ui][atom-ide-ui])
 
 #### Roadmap
 
@@ -45,7 +46,8 @@ This project is licensed under the terms of MIT License. Check the LICENSE file 
 [FlowType]:http://flowtype.org/
 [Atom]:https://atom.io/
 [nuclide]:https://github.com/facebook/nuclide
-[hyperclick]:https://github.com/facebooknuclide/hyperclick
+[hyperclick]:https://github.com/facebook-atom/hyperclick
+[atom-ide-ui]:https://github.com/facebook-atom/atom-ide-ui
 [ide-flow]:https://github.com/lukehoban/atom-ide-flow
 [linter-flow]:https://github.com/AtomLinter/linter-flow
 [autocomplete-flow]:https://github.com/nmn/autocomplete-flow
