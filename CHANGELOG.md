@@ -1,3 +1,9 @@
+#### 1.9.0
+
+- Support [datatip](https://github.com/facebook-atom/atom-ide-ui/blob/508ecfd6aa8121ae2e423b2becbe22e34cf191fb/docs/datatips.md) from [atom-ide-ui](https://github.com/facebook-atom/atom-ide-ui/)
+- Fix wrong coverage (#112)
+- Fix minor markdown rendering issue
+
 #### 1.8.1
 
 - Hide coverage view instead of emptying to fix extra padding
