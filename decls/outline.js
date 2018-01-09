@@ -1,74 +1,74 @@
 /* @flow */
-import type {
-  Point as atom$Point,
-  TextEditor as atom$TextEditor
-} from 'atom'
 
-type TokenKind =
-  | 'keyword'
-  | 'class-name'
-  | 'constructor'
-  | 'method'
-  | 'param'
-  | 'string'
-  | 'whitespace'
-  | 'plain'
-  | 'type';
+declare module 'atom-ide-ui/outline' {
+  import type { Point, TextEditor } from 'atom'
 
-type TextToken = {
-  kind: TokenKind,
-  value: string,
-};
+  declare type TokenKind =
+    | 'keyword'
+    | 'class-name'
+    | 'constructor'
+    | 'method'
+    | 'param'
+    | 'string'
+    | 'whitespace'
+    | 'plain'
+    | 'type';
 
-type TokenizedText = Array<TextToken>;
+  declare type TextToken = {
+    kind: TokenKind,
+    value: string,
+  };
 
-type OutlineTreeKind =
-  | 'file'
-  | 'module'
-  | 'namespace'
-  | 'package'
-  | 'class'
-  | 'method'
-  | 'property'
-  | 'field'
-  | 'constructor'
-  | 'enum'
-  | 'interface'
-  | 'function'
-  | 'variable'
-  | 'constant'
-  | 'string'
-  | 'number'
-  | 'boolean'
-  | 'array';
+  declare type TokenizedText = Array<TextToken>;
 
-type OutlineTree = {
-  icon?: string, // from atom$Octicon (that type's not allowed over rpc so we use string)
-  kind?: OutlineTreeKind, // kind you can pass to the UI for theming
+  declare type OutlineTreeKind =
+    | 'file'
+    | 'module'
+    | 'namespace'
+    | 'package'
+    | 'class'
+    | 'method'
+    | 'property'
+    | 'field'
+    | 'constructor'
+    | 'enum'
+    | 'interface'
+    | 'function'
+    | 'variable'
+    | 'constant'
+    | 'string'
+    | 'number'
+    | 'boolean'
+    | 'array';
 
-  // Must be one or the other. If both are present, tokenizedText is preferred.
-  plainText?: string,
-  tokenizedText?: TokenizedText,
+  declare type OutlineTree = {
+    icon?: string, // from atom$Octicon (that type's not allowed over rpc so we use string)
+    kind?: OutlineTreeKind, // kind you can pass to the UI for theming
 
-  // If user has atom-ide-outline-view.nameOnly then representativeName is used instead.
-  representativeName?: string,
+    // Must be one or the other. If both are present, tokenizedText is preferred.
+    plainText?: string,
+    tokenizedText?: TokenizedText,
 
-  startPosition: atom$Point,
-  endPosition?: atom$Point,
-  landingPosition?: atom$Point,
-  children: Array<OutlineTree>,
-};
+    // If user has atom-ide-outline-view.nameOnly then representativeName is used instead.
+    representativeName?: string,
 
-type Outline = {
-  outlineTrees: Array<OutlineTree>,
-};
+    startPosition: Point,
+    endPosition?: Point,
+    landingPosition?: Point,
+    children: Array<OutlineTree>,
+  };
 
-type OutlineProvider = {
-  name: string,
-  // If there are multiple providers for a given grammar, the one with the highest priority will be
-  // used.
-  priority: number,
-  grammarScopes: Array<string>,
-  updateOnEdit?: boolean,
-  getOutline(editor: atom$TextEditor): Promise<?Outline>,
-};
+  declare type Outline = {
+    outlineTrees: Array<OutlineTree>,
+  };
+
+  declare type OutlineProvider = {
+    name: string,
+    // If there are multiple providers for a given grammar, the one with the highest priority will be
+    // used.
+    priority: number,
+    grammarScopes: Array<string>,
+    updateOnEdit?: boolean,
+    getOutline(editor: TextEditor): Promise<?Outline>,
+  };
+}

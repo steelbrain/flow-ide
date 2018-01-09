@@ -1,39 +1,38 @@
 /* @flow */
-import type {
-  Point as atom$Point,
-  TextEditor as atom$TextEditor,
-  Range as atom$Range,
-} from 'atom'
 
-declare type HyperclickProvider = {
-  // Use this to provide a suggestion for single-word matches.
-  // Optionally set `wordRegExp` to adjust word-matching.
-  getSuggestionForWord?: (
-    textEditor: atom$TextEditor,
-    text: string,
-    range: atom$Range,
-  ) => Promise<?HyperclickSuggestion>,
+declare module 'atom-ide-ui/hyperclick' {
+  import type { Point, Range, TextEditor } from 'atom'
 
-  wordRegExp?: RegExp,
+  declare type HyperclickProvider = {
+    // Use this to provide a suggestion for single-word matches.
+    // Optionally set `wordRegExp` to adjust word-matching.
+    getSuggestionForWord?: (
+      textEditor: TextEditor,
+      text: string,
+      range: Range,
+    ) => Promise<?HyperclickSuggestion>,
 
-  // Use this to provide a suggestion if it can have non-contiguous ranges.
-  // A primary use-case for this is Objective-C methods.
-  getSuggestion?: (
-    textEditor: atom$TextEditor,
-    position: atom$Point,
-  ) => Promise<?HyperclickSuggestion>,
+    wordRegExp?: RegExp,
 
-  // The higher this is, the more precedence the provider gets. Defaults to 0.
-  priority?: number,
+    // Use this to provide a suggestion if it can have non-contiguous ranges.
+    // A primary use-case for this is Objective-C methods.
+    getSuggestion?: (
+      textEditor: TextEditor,
+      position: Point,
+    ) => Promise<?HyperclickSuggestion>,
 
-  // Must be unique. Used for analytics.
-  providerName?: string,
-};
+    // The higher this is, the more precedence the provider gets. Defaults to 0.
+    priority?: number,
 
-declare type HyperclickSuggestion = {
-  // The range(s) to underline to provide as a visual cue for clicking.
-  range: ?atom$Range | ?Array<atom$Range>,
+    // Must be unique. Used for analytics.
+    providerName?: string,
+  };
 
-  // The function to call when the underlined text is clicked.
-  callback: (() => mixed) | Array<{rightLabel?: string, title: string, callback: () => mixed}>,
-};
+  declare type HyperclickSuggestion = {
+    // The range(s) to underline to provide as a visual cue for clicking.
+    range: ?Range | ?Array<Range>,
+
+    // The function to call when the underlined text is clicked.
+    callback: (() => mixed) | Array<{rightLabel?: string, title: string, callback: () => mixed}>,
+  };
+}
