@@ -14,10 +14,7 @@ apm install flow-ide
  - Autocomplete
  - Jump to declaration (using [facebook-atom/hyperclick][hyperclick] or [facebook-atom/atom-ide-ui][atom-ide-ui])
  - Datatip on hover (using [facebook-atom/atom-ide-ui][atom-ide-ui])
-
-#### Roadmap
-
- - Show types on mouseover
+ - Outline of classes, functions, types and variables (using [facebook-atom/atom-ide-ui][atom-ide-ui])
 
 #### Differences to other packages
 
