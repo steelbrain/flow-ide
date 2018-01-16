@@ -111,7 +111,7 @@
           "title": "Show 'export' keyword",
           "description": "Shows a leading 'export' keyword if the variable, function or type is exported",
           "type": "boolean",
-          "default": false
+          "default": true
         },
         "showFunctionArgs": {
           "title": "Show function arguments",
