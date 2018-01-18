@@ -1,6 +1,7 @@
-#### Upcoming
+#### 1.10.0
 
-- Outline of classes, functions, types and variables (using [facebook-atom/atom-ide-ui][atom-ide-ui])
+- [Outline](https://github.com/facebook-atom/atom-ide-ui/blob/2767934/docs/outline-view.md) of classes, functions, types and variables (using [atom-ide-ui](https://github.com/facebook-atom/atom-ide-ui/))
+- Minor bug fixes regarding markdown rendering of flow errors
 
 #### 1.9.0
 
