@@ -30,6 +30,11 @@
       "versions": {
         "2.0.0": "provideLinter"
       }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
     }
   },
   "consumedServices": {
@@ -73,25 +78,47 @@
     "flow-bin": "^0.57.3"
   },
   "configSchema": {
+    "executablePath": {
+      "description": "Path to `flow` executable",
+      "type": "string",
+      "default": "",
+      "order": 1
+    },
     "onlyIfAppropriate": {
       "title": "Only activate when .flowconfig exists",
       "type": "boolean",
-      "default": true
+      "default": true,
+      "order": 2
     },
     "showUncovered": {
       "title": "Show uncovered code in the editor",
       "type": "boolean",
-      "default": false
-    },
-    "executablePath": {
-      "description": "Path to `flow` executable",
-      "type": "string",
-      "default": ""
+      "default": false,
+      "order": 3
     },
     "hyperclickPriority": {
       "description": "Priority to use for hyperclick provider (requires restart)",
       "type": "integer",
-      "default": "0"
+      "default": 0,
+      "order": 4
+    },
+    "outline": {
+      "title": "Outline",
+      "type": "object",
+      "order": 5,
+      "properties": {
+        "showExport": {
+          "title": "Show 'export' keyword",
+          "description": "Shows a leading 'export' keyword if the variable, function or type is exported",
+          "type": "boolean",
+          "default": true
+        },
+        "showFunctionArgs": {
+          "title": "Show function arguments",
+          "type": "boolean",
+          "default": true
+        }
+      }
     }
   }
 }
