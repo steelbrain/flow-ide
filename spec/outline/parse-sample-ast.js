@@ -874,14 +874,12 @@ export const exportedFuncWithObjectRest = {
               loc: loc(lc(1, 13), lc(1, 23)),
               range: [13, 23],
               name: 'restSpread',
-              typeAnnotation: null,
               optional: false,
             },
             init: {
               type: 'ArrowFunctionExpression',
               loc: loc(lc(1, 26), lc(1, 52)),
               range: [26, 52],
-              id: null,
               params: [
                 {
                   type: 'AssignmentPattern',
@@ -901,12 +899,10 @@ export const exportedFuncWithObjectRest = {
                           loc: loc(lc(1, 32), lc(1, 36)),
                           range: [32, 36],
                           name: 'rest',
-                          typeAnnotation: null,
                           optional: false,
                         },
                       },
                     ],
-                    typeAnnotation: null,
                   },
                   right: {
                     type: 'ObjectExpression',
@@ -921,15 +917,11 @@ export const exportedFuncWithObjectRest = {
                 loc: loc(lc(1, 48), lc(1, 52)),
                 range: [48, 52],
                 name: 'rest',
-                typeAnnotation: null,
                 optional: false,
               },
               async: false,
               generator: false,
-              predicate: null,
               expression: true,
-              returnType: null,
-              typeParameters: null,
             },
           },
         ],
@@ -937,6 +929,167 @@ export const exportedFuncWithObjectRest = {
       },
       specifiers: [],
       exportKind: 'value',
+    },
+  ],
+  comments: [],
+}
+
+/*
+const { first, second: renamed, ...rest } = {}
+ */
+export const objectDestructuring = {
+  errors: [],
+  tokens: [],
+  type: 'Program',
+  loc: loc(lc(1, 0), lc(1, 46)),
+  range: [0, 46],
+  body: [
+    {
+      type: 'VariableDeclaration',
+      loc: loc(lc(1, 0), lc(1, 46)),
+      range: [0, 46],
+      declarations: [
+        {
+          type: 'VariableDeclarator',
+          loc: loc(lc(1, 6), lc(1, 46)),
+          range: [6, 46],
+          id: {
+            type: 'ObjectPattern',
+            loc: loc(lc(1, 6), lc(1, 41)),
+            range: [6, 41],
+            properties: [
+              {
+                type: 'Property',
+                loc: loc(lc(1, 8), lc(1, 13)),
+                range: [8, 13],
+                key: {
+                  type: 'Identifier',
+                  loc: loc(lc(1, 8), lc(1, 13)),
+                  range: [8, 13],
+                  name: 'first',
+                  optional: false,
+                },
+                value: {
+                  type: 'Identifier',
+                  loc: loc(lc(1, 8), lc(1, 13)),
+                  range: [8, 13],
+                  name: 'first',
+                  optional: false,
+                },
+                kind: 'init',
+                method: false,
+                shorthand: true,
+                computed: false,
+              },
+              {
+                type: 'Property',
+                loc: loc(lc(1, 15), lc(1, 30)),
+                range: [15, 30],
+                key: {
+                  type: 'Identifier',
+                  loc: loc(lc(1, 15), lc(1, 21)),
+                  range: [15, 21],
+                  name: 'second',
+                  optional: false,
+                },
+                value: {
+                  type: 'Identifier',
+                  loc: loc(lc(1, 23), lc(1, 30)),
+                  range: [23, 30],
+                  name: 'renamed',
+                  optional: false,
+                },
+                kind: 'init',
+                method: false,
+                shorthand: false,
+                computed: false,
+              },
+              {
+                type: 'RestProperty',
+                loc: loc(lc(1, 32), lc(1, 39)),
+                range: [32, 39],
+                argument: {
+                  type: 'Identifier',
+                  loc: loc(lc(1, 35), lc(1, 39)),
+                  range: [35, 39],
+                  name: 'rest',
+                  optional: false,
+                },
+              },
+            ],
+          },
+          init: {
+            type: 'ObjectExpression',
+            loc: loc(lc(1, 44), lc(1, 46)),
+            range: [44, 46],
+            properties: [],
+          },
+        },
+      ],
+      kind: 'const',
+    },
+  ],
+  comments: [],
+}
+
+/*
+const [first, , ...rest] = []
+ */
+export const arrayDestructuring = {
+  errors: [],
+  tokens: [],
+  type: 'Program',
+  loc: loc(lc(1, 0), lc(1, 29)),
+  range: [0, 29],
+  body: [
+    {
+      type: 'VariableDeclaration',
+      loc: loc(lc(1, 0), lc(1, 29)),
+      range: [0, 29],
+      declarations: [
+        {
+          type: 'VariableDeclarator',
+          loc: loc(lc(1, 6), lc(1, 29)),
+          range: [6, 29],
+          id: {
+            type: 'ArrayPattern',
+            loc: loc(lc(1, 6), lc(1, 24)),
+            range: [6, 24],
+            elements: [
+              {
+                type: 'Identifier',
+                loc: loc(lc(1, 7), lc(1, 12)),
+                range: [7, 12],
+                name: 'first',
+                typeAnnotation: null,
+                optional: false,
+              },
+              null,
+              {
+                type: 'RestElement',
+                loc: loc(lc(1, 16), lc(1, 23)),
+                range: [16, 23],
+                argument: {
+                  type: 'Identifier',
+                  loc: loc(lc(1, 19), lc(1, 23)),
+                  range: [19, 23],
+                  name: 'rest',
+                  typeAnnotation: null,
+                  optional: false,
+                },
+              },
+            ],
+            typeAnnotation: null,
+          },
+          init: {
+            type: 'ArrayExpression',
+            loc: loc(lc(1, 27), lc(1, 29)),
+            range: [27, 29],
+            elements: [],
+          },
+        },
+      ],
+      kind: 'const',
     },
   ],
   comments: [],
