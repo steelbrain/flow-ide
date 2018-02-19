@@ -6,6 +6,7 @@ import {
   func, exportedFunc,
   variables, exportedVariables,
   classDecl, exportedClassDecl,
+  exportedFuncWithObjectRest,
 } from './parse-sample-ast'
 import * as Parse from '../../lib/outline/parse'
 
@@ -187,6 +188,29 @@ describe('outline/parse', function() {
         Parse.astToOutline(buildOptions(true, true), exportedVariables).outlineTrees,
       )).toEqual(
         ['export exportedConstantValue', 'export exportedLetValue', 'export exportedVarValue'],
+      )
+    })
+
+    it('exported func with object rest', function() {
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(false, false), exportedFuncWithObjectRest).outlineTrees,
+      )).toEqual(
+        ['restSpread'],
+      )
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(true, false), exportedFuncWithObjectRest).outlineTrees,
+      )).toEqual(
+        ['export restSpread'],
+      )
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(false, true), exportedFuncWithObjectRest).outlineTrees,
+      )).toEqual(
+        ['restSpread({...rest})'],
+      )
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(true, true), exportedFuncWithObjectRest).outlineTrees,
+      )).toEqual(
+        ['export restSpread({...rest})'],
       )
     })
   })

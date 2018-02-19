@@ -845,3 +845,99 @@ export const exportedClassDecl = {
     exportKind: 'value',
   }],
 }
+
+/*
+export const restSpread = ({ ...rest }) => rest
+ */
+export const exportedFuncWithObjectRest = {
+  errors: [],
+  tokens: [],
+  type: 'Program',
+  loc: loc(lc(1, 0), lc(1, 52)),
+  range: [0, 52],
+  body: [
+    {
+      type: 'ExportNamedDeclaration',
+      loc: loc(lc(1, 0), lc(1, 52)),
+      range: [0, 52],
+      declaration: {
+        type: 'VariableDeclaration',
+        loc: loc(lc(1, 7), lc(1, 52)),
+        range: [7, 52],
+        declarations: [
+          {
+            type: 'VariableDeclarator',
+            loc: loc(lc(1, 13), lc(1, 52)),
+            range: [13, 52],
+            id: {
+              type: 'Identifier',
+              loc: loc(lc(1, 13), lc(1, 23)),
+              range: [13, 23],
+              name: 'restSpread',
+              typeAnnotation: null,
+              optional: false,
+            },
+            init: {
+              type: 'ArrowFunctionExpression',
+              loc: loc(lc(1, 26), lc(1, 52)),
+              range: [26, 52],
+              id: null,
+              params: [
+                {
+                  type: 'AssignmentPattern',
+                  loc: loc(lc(1, 27), lc(1, 43)),
+                  range: [27, 43],
+                  left: {
+                    type: 'ObjectPattern',
+                    loc: loc(lc(1, 27), lc(1, 38)),
+                    range: [27, 38],
+                    properties: [
+                      {
+                        type: 'RestProperty',
+                        loc: loc(lc(1, 29), lc(1, 36)),
+                        range: [29, 36],
+                        argument: {
+                          type: 'Identifier',
+                          loc: loc(lc(1, 32), lc(1, 36)),
+                          range: [32, 36],
+                          name: 'rest',
+                          typeAnnotation: null,
+                          optional: false,
+                        },
+                      },
+                    ],
+                    typeAnnotation: null,
+                  },
+                  right: {
+                    type: 'ObjectExpression',
+                    loc: loc(lc(1, 41), lc(1, 43)),
+                    range: [41, 43],
+                    properties: [],
+                  },
+                },
+              ],
+              body: {
+                type: 'Identifier',
+                loc: loc(lc(1, 48), lc(1, 52)),
+                range: [48, 52],
+                name: 'rest',
+                typeAnnotation: null,
+                optional: false,
+              },
+              async: false,
+              generator: false,
+              predicate: null,
+              expression: true,
+              returnType: null,
+              typeParameters: null,
+            },
+          },
+        ],
+        kind: 'const',
+      },
+      specifiers: [],
+      exportKind: 'value',
+    },
+  ],
+  comments: [],
+}
