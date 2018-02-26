@@ -6,6 +6,8 @@ import {
   func, exportedFunc,
   variables, exportedVariables,
   classDecl, exportedClassDecl,
+  objectDestructuring, arrayDestructuring,
+  exportedFuncWithObjectRest,
 } from './parse-sample-ast'
 import * as Parse from '../../lib/outline/parse'
 
@@ -187,6 +189,75 @@ describe('outline/parse', function() {
         Parse.astToOutline(buildOptions(true, true), exportedVariables).outlineTrees,
       )).toEqual(
         ['export exportedConstantValue', 'export exportedLetValue', 'export exportedVarValue'],
+      )
+    })
+
+    it('object destructuring', function() {
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(false, false), objectDestructuring).outlineTrees,
+      )).toEqual(
+        ['{first, renamed, ...rest}'],
+      )
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(true, false), objectDestructuring).outlineTrees,
+      )).toEqual(
+        ['{first, renamed, ...rest}'],
+      )
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(false, true), objectDestructuring).outlineTrees,
+      )).toEqual(
+        ['{first, renamed, ...rest}'],
+      )
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(true, true), objectDestructuring).outlineTrees,
+      )).toEqual(
+        ['{first, renamed, ...rest}'],
+      )
+    })
+
+    it('array destructuring', function() {
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(false, false), arrayDestructuring).outlineTrees,
+      )).toEqual(
+        ['[first, , ...rest]'],
+      )
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(true, false), arrayDestructuring).outlineTrees,
+      )).toEqual(
+        ['[first, , ...rest]'],
+      )
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(false, true), arrayDestructuring).outlineTrees,
+      )).toEqual(
+        ['[first, , ...rest]'],
+      )
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(true, true), arrayDestructuring).outlineTrees,
+      )).toEqual(
+        ['[first, , ...rest]'],
+      )
+    })
+
+    it('exported func with object rest', function() {
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(false, false), exportedFuncWithObjectRest).outlineTrees,
+      )).toEqual(
+        ['restSpread'],
+      )
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(true, false), exportedFuncWithObjectRest).outlineTrees,
+      )).toEqual(
+        ['export restSpread'],
+      )
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(false, true), exportedFuncWithObjectRest).outlineTrees,
+      )).toEqual(
+        ['restSpread({...rest})'],
+      )
+      expect(toOutlineTexts(
+        Parse.astToOutline(buildOptions(true, true), exportedFuncWithObjectRest).outlineTrees,
+      )).toEqual(
+        ['export restSpread({...rest})'],
       )
     })
   })
