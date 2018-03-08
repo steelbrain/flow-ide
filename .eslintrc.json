@@ -8,5 +8,8 @@
     "no-duplicate-imports": "off",
     "flowtype/define-flow-type": "error",
     "flowtype/use-flow-type": "error"
+  },
+  "globals": {
+    "waitsForPromise": true
   }
 }
