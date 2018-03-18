@@ -1,20 +1,8 @@
 /* @flow */
 /* eslint-env jasmine */
 
-// import {
-//   typeDecl, exportedTypeDecl,
-//   func, exportedFunc,
-//   variables, exportedVariables,
-//   classDecl, exportedClassDecl,
-//   objectDestructuring, arrayDestructuring,
-//   exportedFuncWithObjectRest,
-// } from './parse-sample-ast'
-// import * as Parse from '../../lib/outline/parse'
-
 import { findCached, exec } from 'atom-linter'
 import * as LinterV2 from '../../../lib/linter/v2'
-
-declare var waitsForPromise
 
 function fileUrl(file, row, column) {
   return `atom://linter?file=${encodeURIComponent(file)}&row=${row}&column=${column}`
