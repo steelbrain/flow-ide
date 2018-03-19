@@ -12,3 +12,7 @@ suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
 
 [lints]
 all=warn
+
+# turned off because there are lot of types missing atm...
+unclear-type=off
+untyped-import=off
