@@ -1,3 +1,9 @@
+#### 1.11.0
+
+- Support new errors messages since [flow 0.66.0](https://github.com/facebook/flow/releases/tag/v0.66.0)
+- Fix goto definition (via hyperclick) if the cursor is at the end of the word
+- Fix outline for rest/spread operators
+
 #### 1.10.0
 
 - [Outline](https://github.com/facebook-atom/atom-ide-ui/blob/2767934/docs/outline-view.md) of classes, functions, types and variables (using [atom-ide-ui](https://github.com/facebook-atom/atom-ide-ui/))
