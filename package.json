@@ -76,7 +76,7 @@
   "devDependencies": {
     "eslint-config-steelbrain": "^3.0.1",
     "eslint-plugin-flowtype": "^2.33.0",
-    "flow-bin": "^0.68.0"
+    "flow-bin": "^0.70.0"
   },
   "configSchema": {
     "executablePath": {
