@@ -1,3 +1,7 @@
+#### 1.11.1
+
+- Support for Tree-Sitter Flow grammar
+
 #### 1.11.0
 
 - Support new errors messages since [flow 0.66.0](https://github.com/facebook/flow/releases/tag/v0.66.0)
