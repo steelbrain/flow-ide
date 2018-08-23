@@ -76,7 +76,7 @@
   "devDependencies": {
     "eslint-config-steelbrain": "^3.0.1",
     "eslint-plugin-flowtype": "^2.33.0",
-    "flow-bin": "^0.68.0"
+    "flow-bin": "^0.70.0"
   },
   "configSchema": {
     "executablePath": {
@@ -91,22 +91,28 @@
       "default": true,
       "order": 2
     },
+    "stopServer": {
+      "title": "Stop flow server when disabling this plugin or closing atom",
+      "type": "boolean",
+      "default": true,
+      "order": 3
+    },
     "showUncovered": {
       "title": "Show uncovered code in the editor",
       "type": "boolean",
       "default": false,
-      "order": 3
+      "order": 4
     },
     "hyperclickPriority": {
       "description": "Priority to use for hyperclick provider (requires restart)",
       "type": "integer",
       "default": 0,
-      "order": 4
+      "order": 5
     },
     "outline": {
       "title": "Outline",
       "type": "object",
-      "order": 5,
+      "order": 6,
       "properties": {
         "showExport": {
           "title": "Show 'export' keyword",
