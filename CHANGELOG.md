@@ -1,3 +1,8 @@
+#### 1.12.0
+
+- Add config to stop flow server when flow-ide is stopped
+- Fix autocomplete selector
+
 #### 1.11.1
 
 - Support for Tree-Sitter Flow grammar
