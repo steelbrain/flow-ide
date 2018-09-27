@@ -1,3 +1,7 @@
+#### 1.12.1
+
+- Support for Tree-Sitter Flow grammar
+
 #### 1.12.0
 
 - Add config to stop flow server when flow-ide is stopped
