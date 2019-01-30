@@ -123,7 +123,7 @@
   },
   "homepage": "https://github.com/steelbrain/flow-ide#readme",
   "dependencies": {
-    "@lloiser/atom-languageclient": "^0.10.0",
+    "@lloiser/atom-languageclient": "^0.10.1",
     "atom-autocomplete": "^1.0.0",
     "atom-babel6-transpiler": "^1.2.0",
     "atom-linter": "^10.0.0",
