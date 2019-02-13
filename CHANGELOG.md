@@ -1,3 +1,7 @@
+#### 1.13.0
+
+- Use the official [language server protocol](https://microsoft.github.io/language-server-protocol/) to communicate with `flow`
+
 #### 1.12.1
 
 - Support for Tree-Sitter Flow grammar
