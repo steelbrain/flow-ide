@@ -13,15 +13,15 @@ apm install flow-ide
 ```
 npm install --save-dev flow-bin
 ```
-or 
+or
 ```
 yarn add --dev flow-bin
 ```
 
- 2) You will need ``` // @flow ``` at the top of all files you wish to lint
+ 2) You will need ` // @flow ` at the top of all files you wish to lint
 
 
-3) You will need a ```.flowconfig``` which can be initialized with ```flow init``` if you have flow installed, if not you can use [this flowconfig](https://github.com/steelbrain/flow-ide/blob/master/.flowconfig)
+3) You will need a `.flowconfig` which can be initialized with `flow init` if you have flow installed, if not you can use [this flowconfig](https://github.com/steelbrain/flow-ide/blob/master/.flowconfig)
 
 4) Window: Reload (Ctrl+Shift+F5) to apply changes
 
