@@ -8,6 +8,24 @@ Flow IDE is a lightweight package that provides IDE features for [FlowType][Flow
 apm install flow-ide
 ```
 
+#### Setup
+ 1) You will need to install flow-bin into your project!
+```
+npm install --save-dev flow-bin
+```
+or 
+```
+yarn add --dev flow-bin
+```
+
+ 2) You will need ``` // @flow ``` at the top of all files you wish to lint
+
+
+3) You will need a ```.flowconfig``` which can be initialized with ```flow init``` if you have flow installed, if not you can use [this flowconfig](https://github.com/steelbrain/flow-ide/blob/master/.flowconfig)
+
+4) Window: Reload (Ctrl+Shift+F5) to apply changes
+
+
 #### Features
 
  - Linting
